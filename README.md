@@ -1,3 +1,3 @@
 | Language - C :arrow_lower_right: | :dart: Holberton School  -  High Level Programming :dart:                    |
 | :------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|  $${\color{yellow}Week}$$ :one: | [Python Hello World]() :white_check_mark:  | 
+|  $${\color{yellow}Week}$$ :one: | [Python Hello World](https://github.com/vlldnt/holbertonschool-higher_level_programming/tree/main/python-hello_world) :white_check_mark:  | 
