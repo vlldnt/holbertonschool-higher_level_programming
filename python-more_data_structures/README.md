@@ -1,4 +1,4 @@
-## Python More Data Strutcures - :dart: Holberton School  -  High Level Programming :dart:  
+## Python More Data Strutcures - :dart: Holberton School :dart:  
 
 ### Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
