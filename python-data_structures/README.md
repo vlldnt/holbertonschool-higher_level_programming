@@ -1,4 +1,4 @@
-## Python Data Structures
+## Python Data Structures - Holberton School - C#25
 ### Learning objectives
 - What are lists and how to use them
 - What are the differences and similarities between strings and lists
