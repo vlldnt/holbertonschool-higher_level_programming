@@ -1,3 +1,9 @@
 ## Python More Data Strutcures
 
-- [Task 0]()
+- [Task 0](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/0-square_matrix_simple.py) Return a square values of each integer of a matix
+- [Task 1](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/1-search_replace.py) Replace all same element by another in a new list
+- [Task 2](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/2-uniq_add.py) Adds all unique integers in a list
+- [Task 3](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/3-common_elements.py) Returns a set of common elements in two sets
+- [Task 4](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/4-only_diff_elements.py) Returns a set of all elements present in only one set
+- [Task 5](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/5-number_keys.py) Return the number of keys in a dictionary
+- [Task 6](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/6-print_sorted_dictionary.py) Prints a dictionary by ordered keys
