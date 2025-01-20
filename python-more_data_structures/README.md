@@ -23,3 +23,5 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - [4-only_diff_element.py](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/4-only_diff_elements.py) Returns a set of all elements present in only one set
 - [5-number_keys.py](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/5-number_keys.py) Return the number of keys in a dictionary
 - [6-print_sorted_disctionary.py](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/6-print_sorted_dictionary.py) Prints a dictionary by ordered keys
+- [7-update_dictionary.py](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/7-update_dictionary.py) Replace or add key/value in a dictionary
+- [8-simple_delete.py](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/8-simple_delete.py) Delete a key in a dictionary
