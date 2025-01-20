@@ -1,5 +1,21 @@
 ## Python More Data Strutcures
 
+> ### Learning Objectives
+> At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+> - Why Python programming is awesome
+> - What are sets and how to use them
+> - What are the most common methods of set and how to use them
+> - When to use sets versus lists
+> - How to iterate into a set
+> - What are dictionaries and how to use them
+> - When to use dictionaries versus lists or sets
+> - What is a key in a dictionary
+> - How to iterate over a dictionary
+> - What is a lambda function
+> - What are the map, reduce and filter functions
+
+
+### Exercices
 - [Task 0](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/0-square_matrix_simple.py) Return a square values of each integer of a matix
 - [Task 1](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/1-search_replace.py) Replace all same element by another in a new list
 - [Task 2](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/2-uniq_add.py) Adds all unique integers in a list
