@@ -13,7 +13,7 @@ def roman_to_int(roman_string):
     for char in reversed(roman_string):
         if char not in roman_numbers:
             return 0
-        
+
         value = roman_numbers[char]
 
         if value < previous:
