@@ -25,3 +25,6 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - [6-print_sorted_disctionary.py](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/6-print_sorted_dictionary.py) Prints a dictionary by ordered keys
 - [7-update_dictionary.py](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/7-update_dictionary.py) Replace or add key/value in a dictionary
 - [8-simple_delete.py](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/8-simple_delete.py) Delete a key in a dictionary
+- [9-multiply_by_2.py](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/9-multiply_by_2.py) Return a new dictionary with all value multiplied by 2
+- [10-best_score.py](https://github.com/vlldnt/holbertonschool-higher_level_programming/blob/main/python-more_data_structures/10-best_score.py) Returns a key with the biggest value
+-
