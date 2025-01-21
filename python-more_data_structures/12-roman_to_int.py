@@ -8,11 +8,15 @@ def roman_to_int(roman_string):
         'L': 50, 'C': 100, 'D': 500, 'M': 1000
         }
     result = 0
+    previous = 0
 
-    for char in roman_string:
+    for char in reversed(roman_string):
         if char not in roman_numbers:
             return 0
+        value = roman_numbers[char]
+        if value < previous:
+            result -= value
         else:
-            value = roman_numbers[char]
             result += value
+            previous = value
     return result
