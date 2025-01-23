@@ -1,10 +1,13 @@
 #!/usr/bin/python3
+'''
+Function that print /n after '.' '?' ':'
+text : the text to indentate
+Print the new text
+'''
+
+
 def text_indentation(text):
-    '''
-    Function that print /n after '.' '?' ':'
-    text : the text to indentate
-    Print the new text
-    '''
+    '''Function that print /n after '.' '?' ':'''
 
     new_text = ""
     i = 0
@@ -20,6 +23,7 @@ def text_indentation(text):
             i += 1
             while (i < len(text) and text[i] == ' '):
                 i += 1
+            continue
         i += 1
 
     print("{:s}".format(new_text), end="")
