@@ -10,3 +10,7 @@
 
 >>> print(matrix_divided(matrix, 6))
 [[0.5, 1.0, 1.5], [2.0, 2.5, 3.0]]
+
+>>> matrix_divided(matrix, 0)
+Traceback (most recent call last):
+ZeroDivisionError: division by zero
