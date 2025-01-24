@@ -17,6 +17,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([2, 2, 2]), 2)
         self.assertEqual(max_integer([51]), 51)
         self.assertEqual(max_integer([51, -876, 987]), 987)
+        self.assertEqual(max_integer([51, 98876, 987]), 98876)
 
     def test_one_inf_zero_ony(self):
         '''integer < 0 test'''
