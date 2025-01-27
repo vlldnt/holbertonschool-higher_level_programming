@@ -5,7 +5,7 @@ Setting width and height for the rectangle
 
 
 class Rectangle:
-    ''' Init '''
+    ''' adding private instance for width and height '''
     def __init__(self, width=0, height=0):
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
