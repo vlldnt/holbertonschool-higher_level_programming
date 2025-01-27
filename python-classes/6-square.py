@@ -38,3 +38,9 @@ class Square:
         self.__size = value
         return self.__size
 
+    def my_print(self):
+        '''Print the square based size'''
+        if self.__size == 0:
+            print()
+        else:
+            print((("#" * self.__size) + "\n") * self.__size, end="")
