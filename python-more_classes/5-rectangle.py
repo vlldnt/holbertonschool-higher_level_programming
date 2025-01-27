@@ -65,4 +65,4 @@ class Rectangle:
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
     def __del__(sefl):
-        print("Bye rectangle... ")
+        print("Bye rectangle...")
