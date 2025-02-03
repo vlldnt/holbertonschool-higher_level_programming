@@ -1,0 +1,29 @@
+>>> MyList = __import__('1-my_list').MyList
+
+>>> empty_list = MyList()
+>>> empty_list.print_sorted()
+[]
+
+>>> my_list = MyList([8, 6, 4, 2])
+>>> print(my_list)
+[8, 6, 4, 2]
+
+>>> my_list.append(10)
+>>> print(my_list)
+[8, 6, 4, 2, 10]
+
+>>> my_list = MyList([8, 6, 4, 2, 2, 4, 6, 8])
+>>> print(my_list)
+[8, 6, 4, 2, 2, 4, 6, 8]
+
+>>> my_list = MyList([-2, -4, -6, -8, 2, 4, 6, 8])
+>>> print(my_list)
+[-2, -4, -6, -8, 2, 4, 6, 8]
+
+>>> str_list = MyList(["McDonalds", "SFR", "Apple", "Tesla"])
+>>> print(str_list)
+['McDonalds', 'SFR', 'Apple', 'Tesla']
+
+>>> mixed_list = MyList([8, "Apple", 3.14, True])
+>>> print(mixed_list)
+[8, 'Apple', 3.14, True]
