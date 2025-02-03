@@ -5,4 +5,4 @@
 class MyList(list):
     '''Return the list created'''
     def print_sorted(self):
-        return list(self)
+        print(sorted(self))
