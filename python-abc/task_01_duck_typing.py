@@ -7,8 +7,8 @@ import math
 
 
 class Shape(ABC):
-
     '''Abstract class ABC'''
+
     @abstractmethod
     def area(self):
         pass
@@ -47,6 +47,6 @@ class Rectangle(Shape):
 
 def shape_info(shape):
     '''Shape info of shape waribale'''
-    
+
     print("Area: {}".format(shape.area()))
     print("Perimeter: {}".format(shape.perimeter()))
