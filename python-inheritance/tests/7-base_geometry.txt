@@ -89,7 +89,7 @@ ValueError: negative zero must be greater than 0
 
 >>> bg.integer_validator("big number", 999999999999999999999)
 >>> bg.integer_validator("zero", 0)
-Traceback (most recent call last):
+Traceback (most recent call last): Python - ABC
 ValueError: zero must be greater than 0
 
 >>> bg.integer_validator("boolean", False)
