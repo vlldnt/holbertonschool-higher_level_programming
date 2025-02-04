@@ -7,6 +7,7 @@ import math
 
 
 class Shape(ABC):
+
     '''Abstract class ABC'''
     @abstractmethod
     def area(self):
@@ -19,6 +20,7 @@ class Shape(ABC):
 
 class Circle(Shape):
     '''Circle class from shape'''
+
     def __init__(self, radius):
         self.radius = radius
 
@@ -31,6 +33,7 @@ class Circle(Shape):
 
 class Rectangle(Shape):
     '''Rectangle class from shape'''
+
     def __init__(self, width, height):
         self.width = width
         self.height = height
@@ -44,5 +47,6 @@ class Rectangle(Shape):
 
 def shape_info(shape):
     '''Shape info of shape waribale'''
+    
     print("Area: {}".format(shape.area()))
     print("Perimeter: {}".format(shape.perimeter()))
