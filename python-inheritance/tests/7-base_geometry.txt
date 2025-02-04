@@ -60,3 +60,38 @@ True
 Traceback (most recent call last):
 Exception: area() is not implemented
 
+>>> bg.integer_validator("length", 42)
+>>> bg.integer_validator("width", 1)
+
+>>> bg.integer_validator("height", -100)
+Traceback (most recent call last):
+ValueError: height must be greater than 0
+
+>>> bg.integer_validator("depth", 3.5)
+Traceback (most recent call last):
+TypeError: depth must be an integer
+
+>>> bg.integer_validator("volume", [1, 2, 3])
+Traceback (most recent call last):
+TypeError: volume must be an integer
+
+>>> bg.integer_validator("temperature", {1: "one"})
+Traceback (most recent call last):
+TypeError: temperature must be an integer
+
+>>> bg.integer_validator("pressure", (2, 3))
+Traceback (most recent call last):
+TypeError: pressure must be an integer
+
+>>> bg.integer_validator("negative zero", -0)
+Traceback (most recent call last):
+ValueError: negative zero must be greater than 0
+
+>>> bg.integer_validator("big number", 999999999999999999999)
+>>> bg.integer_validator("zero", 0)
+Traceback (most recent call last):
+ValueError: zero must be greater than 0
+
+>>> bg.integer_validator("boolean", False)
+Traceback (most recent call last):
+TypeError: boolean must be an integer
