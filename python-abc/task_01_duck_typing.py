@@ -43,5 +43,6 @@ class Rectangle(Shape):
 
 
 def shape_info(shape):
+    '''Shape info of shape waribale'''
     print("Area: {}".format(shape.area()))
     print("Perimeter: {}".format(shape.perimeter()))
