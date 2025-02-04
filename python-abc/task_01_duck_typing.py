@@ -22,7 +22,7 @@ class Circle(Shape):
     '''Circle class from shape'''
 
     def __init__(self, radius):
-        self.radius = radius
+        self.radius = abs(radius)
 
     def perimeter(self):
         return self.radius * 2 * math.pi
