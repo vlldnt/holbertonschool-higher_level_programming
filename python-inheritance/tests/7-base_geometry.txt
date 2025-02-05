@@ -90,3 +90,7 @@ TypeError: inf must be an integer
 >>> BaseGeometry.integer_validator(BaseGeometry, "boolean", None)
 Traceback (most recent call last):
 TypeError: boolean must be an integer
+
+>>> BaseGeometry.integer_validator(BaseGeometry, "age")
+Traceback (most recent call last):
+TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
