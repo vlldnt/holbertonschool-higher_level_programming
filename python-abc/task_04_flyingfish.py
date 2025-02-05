@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 '''Flying fish class inherit from Bird and Fish'''
 
+
 class Fish:
     '''Fish class'''
     def swim(self):
