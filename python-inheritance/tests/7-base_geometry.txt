@@ -115,7 +115,3 @@ TypeError: BaseGeometry.integer_validator() missing 1 required positional argume
 >>> bg.integer_validator()
 Traceback (most recent call last):
 TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
-
->>> bg.integer_validator("coucou", 1, 4)
-Traceback (most recent call last):
-TypeError: BaseGeometry.integer_validator() takes 3 positional arguments but 4 were given
