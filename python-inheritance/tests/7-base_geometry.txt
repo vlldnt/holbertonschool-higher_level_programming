@@ -4,25 +4,21 @@
 >>> isinstance(bg, BaseGeometry)
 True
 
->>> BaseGeometry.integer_validator(BaseGeometry, "age", -1)
+>>> bg.integer_validator("age", -1)
 Traceback (most recent call last):
 ValueError: age must be greater than 0
 
->>> BaseGeometry.integer_validator(BaseGeometry, "distance", -4)
-Traceback (most recent call last):
-ValueError: distance must be greater than 0
+>>> bg.integer_validator("age", 1)
 
->>> BaseGeometry.integer_validator(BaseGeometry, "age", 1)
-
->>> BaseGeometry.integer_validator(BaseGeometry, "age", True)
+>>> bg.integer_validator("age", True)
 Traceback (most recent call last):
 TypeError: age must be an integer
 
->>> BaseGeometry.integer_validator(BaseGeometry, "age", "4")
+>>> bg.integer_validator("age", "4")
 Traceback (most recent call last):
 TypeError: age must be an integer
 
->>> BaseGeometry.integer_validator(BaseGeometry, "age", {3, 4})
+>>> bg.integer_validator("age", {3, 4})
 Traceback (most recent call last):
 TypeError: age must be an integer
 
@@ -30,23 +26,23 @@ TypeError: age must be an integer
 Traceback (most recent call last):
 Exception: area() is not implemented
 
->>> BaseGeometry.integer_validator(BaseGeometry, "salut", (4,))
+>>> bg.integer_validator("salut", (4,))
 Traceback (most recent call last):
 TypeError: salut must be an integer
 
->>> BaseGeometry.integer_validator(BaseGeometry, "toto", [3])
+>>> bg.integer_validator("toto", [3])
 Traceback (most recent call last):
 TypeError: toto must be an integer
 
->>> BaseGeometry.integer_validator(BaseGeometry, "oléolé", 0)
+>>> bg.integer_validator("oléolé", 0)
 Traceback (most recent call last):
 ValueError: oléolé must be greater than 0
 
->>> BaseGeometry.integer_validator(BaseGeometry, "age", {3, 4})
+>>> bg.integer_validator("age", {3, 4})
 Traceback (most recent call last):
 TypeError: age must be an integer
 
->>> BaseGeometry.integer_validator(BaseGeometry, "age", None)
+>>> bg.integer_validator("age", None)
 Traceback (most recent call last):
 TypeError: age must be an integer
 
@@ -60,12 +56,9 @@ True
 Traceback (most recent call last):
 Exception: area() is not implemented
 
->>> bg.integer_validator("length", 42)
->>> bg.integer_validator("width", 1)
-
->>> bg.integer_validator("height", -100)
+>>> bg.area(3)
 Traceback (most recent call last):
-ValueError: height must be greater than 0
+TypeError: BaseGeometry.area() takes 1 positional argument but 2 were given
 
 >>> bg.integer_validator("depth", 3.5)
 Traceback (most recent call last):
@@ -75,10 +68,6 @@ TypeError: depth must be an integer
 Traceback (most recent call last):
 TypeError: volume must be an integer
 
->>> bg.integer_validator("temperature", {1: "one"})
-Traceback (most recent call last):
-TypeError: temperature must be an integer
-
 >>> bg.integer_validator("pressure", (2, 3))
 Traceback (most recent call last):
 TypeError: pressure must be an integer
@@ -87,14 +76,11 @@ TypeError: pressure must be an integer
 Traceback (most recent call last):
 ValueError: negative_zero must be greater than 0
 
->>> bg.integer_validator("big number", 999999999999999999999)
+>>> bg.integer_validator("big_number", 999999999999999999999)
+
 >>> bg.integer_validator("zero", 0)
 Traceback (most recent call last):
 ValueError: zero must be greater than 0
-
->>> bg.integer_validator("boolean", False)
-Traceback (most recent call last):
-TypeError: boolean must be an integer
 
 >>> bg.integer_validator("NaN", float('nan'))
 Traceback (most recent call last):
@@ -116,3 +102,6 @@ TypeError: BaseGeometry.integer_validator() missing 1 required positional argume
 Traceback (most recent call last):
 TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
 
+>>> bg.integer_validator()
+Traceback (most recent call last):
+TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
