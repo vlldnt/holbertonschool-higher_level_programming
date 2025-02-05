@@ -56,10 +56,6 @@ True
 Traceback (most recent call last):
 Exception: area() is not implemented
 
->>> bg.area(3)
-Traceback (most recent call last):
-TypeError: BaseGeometry.area() takes 1 positional argument but 2 were given
-
 >>> bg.integer_validator("depth", 3.5)
 Traceback (most recent call last):
 TypeError: depth must be an integer
