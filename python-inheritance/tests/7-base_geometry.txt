@@ -107,3 +107,12 @@ TypeError: inf must be an integer
 >>> bg.integer_validator("boolean", None)
 Traceback (most recent call last):
 TypeError: boolean must be an integer
+
+>>> bg.integer_validator("Coucou")
+Traceback (most recent call last):
+TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+
+>>> bg.integer_validator(6)
+Traceback (most recent call last):
+TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+
