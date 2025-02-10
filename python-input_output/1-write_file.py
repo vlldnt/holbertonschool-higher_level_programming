@@ -2,6 +2,7 @@
 '''Write file in python'''
 
 
-def write_file(filename=""):
-    with open(filename) as file:
-        
+def write_file(filename="", text=""):
+    with open(filename, "w", encoding="UTF-8") as file:
+        file.write(text)
+    return len(text)
