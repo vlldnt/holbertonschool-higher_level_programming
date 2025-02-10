@@ -3,6 +3,6 @@
 
 
 def read_file(filename=""):
-    with open(filename) as file:
+    with open(filename, "r", encoding="UTF-8") as file:
         for words in file:
             print("{}".format(words), end="")
