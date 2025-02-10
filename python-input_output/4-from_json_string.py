@@ -6,4 +6,5 @@ import json
 
 
 def from_json_string(my_str):
+    '''Workng of JSON string, return'''
     return json.load(my_str)
