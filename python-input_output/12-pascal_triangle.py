@@ -9,8 +9,8 @@ def pascal_triangle(n):
     triangle = [[1]]
     for i in range(1, n):
         line = [1]
-        for li in range(1, i):
-            line.append(triangle[i - 1][li - 1] + triangle[i - 1][li])
+        for j in range(1, i):
+            line.append(triangle[i - 1][j - 1] + triangle[i - 1][j])
         line.append(1)
         triangle.append(line)
     return triangle
