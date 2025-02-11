@@ -21,7 +21,6 @@ class CustomObject:
         '''Serialize using pickle module to a specified file'''
         try:
             with open(filename, "wb") as file:
-                # "wb" write/binary (Pickle method)
                 pickle.dump(self, file)
         except Exception as e:
             return None
@@ -32,5 +31,5 @@ class CustomObject:
         try:
             with open(filename, "rb") as file:
                 return pickle.load(file)
-        except FileNotFoundError:
+        except Exception as e:
             return None
