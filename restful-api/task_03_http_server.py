@@ -2,11 +2,11 @@
 '''http.server module use'''
 
 
-from  http.server import HTTPServer, BaseHTTPRequestHandler
+from http.server import HTTPServer, BaseHTTPRequestHandler
 import json
 
 
-class Handler(BaseHTTPRequestHandler): 
+class Handler(BaseHTTPRequestHandler):
     '''Subclass of http.server.BaseHTTPRequestHandler'''
 
     def do_GET(self):
@@ -23,32 +23,34 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header("Content-type", "application/json; charset=utf-8")
             self.end_headers()
             self.wfile.write(json.dumps(data).encode('utf-8'))
-        
+
         elif self.path == '/status':
             self.send_response(200)
-            self.send_header("Content-type", "text/plain; charset=utf-8") 
-            self.end_headers()  
+            self.send_header("Content-type", "text/plain; charset=utf-8")
+            self.end_headers()
             self.wfile.write(b"Ok")
-        
+
         elif self.path == "/info":
-            data = {"version": "1.0", "description": "A simple API built with http.server"}
+            data = {"version": "1.0",
+                    "description": "A simple API built with http.server"}
             self.send_response(200)
             self.send_header("Content-type", "application/json; charset=utf-8")
             self.end_headers()
             self.wfile.write(json.dumps(data).encode('utf-8'))
-        
+
         else:
             self.send_response(404)
             self.send_header("Content-trype", "text/plain; charset=utf-8")
             self.end_headers()
             self.wfile.write(b"Endpoint not found")
-        
+
+
 def run(server_class=HTTPServer, handler_class=Handler):
     '''Run method to run a http server'''
     server_address = ('', 8000)
     httpd = server_class(server_address, handler_class)
     httpd.serve_forever()
-    
+
 
 if __name__ == "__main__":
     '''main fucntion'''
