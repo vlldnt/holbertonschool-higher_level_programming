@@ -38,7 +38,10 @@ class Handler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(data).encode('utf-8'))
         
         else:
-            self.send_error(404, message="Endpoint not found")
+            self.send_response(404)
+            self.send_header("Content-trype", "text/plain; charset=utf-8")
+            self.end_headers()
+            self.wfile.Write(b"Endpoint not found")
         
 def run(server_class=HTTPServer, handler_class=Handler):
     '''Run method to run a http server'''
