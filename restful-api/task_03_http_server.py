@@ -10,6 +10,7 @@ class Handler(BaseHTTPRequestHandler):
     '''Subclass of http.server.BaseHTTPRequestHandler'''
 
     def do_GET(self):
+        '''DO GET method'''
         if self.path == "/":
             self.send_response(200)
             self.send_header("Content-type", "text/plain; charset=utf-8")
@@ -40,10 +41,12 @@ class Handler(BaseHTTPRequestHandler):
             self.send_error(404, message="Endpoint not found")
         
 def run(server_class=HTTPServer, handler_class=Handler):
+    '''Run method to run a http server'''
     server_address = ('', 8000)
     httpd = server_class(server_address, handler_class)
     httpd.serve_forever()
     
 
 if __name__ == "__main__":
+    '''main fucntion'''
     run()
