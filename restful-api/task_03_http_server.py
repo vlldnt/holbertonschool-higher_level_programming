@@ -2,11 +2,12 @@
 '''http.server module use'''
 
 
-from http.server import HTTPServer, BaseHTTPRequestHandler
+import http.server
+import socketserver
 import json
 
 
-class Handler(BaseHTTPRequestHandler):
+class Handler(http.server.BaseHTTPRequestHandler):
     '''Subclass of http.server.BaseHTTPRequestHandler'''
 
     def do_GET(self):
@@ -45,13 +46,9 @@ class Handler(BaseHTTPRequestHandler):
             self.wfile.write(b"Endpoint not found")
 
 
-def run(server_class=HTTPServer, handler_class=Handler):
-    '''Run method to run a http server'''
-    server_address = ('', 8000)
-    httpd = server_class(server_address, handler_class)
+port = 8000
+
+
+with socketserver.TCPServer(("", port), Handler) as httpd:
+    print(f"Opening server at {port}")
     httpd.serve_forever()
-
-
-if __name__ == "__main__":
-    '''main fucntion'''
-    run()
