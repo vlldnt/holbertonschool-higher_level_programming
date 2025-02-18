@@ -2,9 +2,7 @@
 '''FLASK ENVIRONNEMENT'''
 
 
-from flask import Flask
-from flask import jsonify
-from flask import request
+from flask import Flask, jsonify, request
 
 
 app = Flask(__name__)
@@ -49,13 +47,18 @@ def username(username):
 
 @app.route("/add_user", methods=['POST'])
 def add_user():
-    data = request.get_json()
-    username = data.get('username')
-    if not username:
+    if not request.json or "username" not in request.json:
         return jsonify({"error": "Username is required"}), 400
-    else:
-        users[username] = data
-        return jsonify({"message": "User added", "user": data}), 201
+    user_data = request.json
+    username = user_data["username"]
+
+    users[username] = {
+        "username": user_data.get("username"),
+        "name": user_data.get("name"),
+        "age": user_data.get("age"),
+        "city": user_data.get("city")
+    }
+    return jsonify({"message": "User added", "user": users[username]}), 201
 
 
 if __name__ == "__main__":
