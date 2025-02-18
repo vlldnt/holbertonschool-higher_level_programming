@@ -1,0 +1,4 @@
+Flask==2.1.0
+flask-jwt-extended==4.7.1
+flask-httpauth==4.8.0
+Werkzeug==2.1.0
