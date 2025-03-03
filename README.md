@@ -10,4 +10,4 @@
 |  $${\color{red}Week}$$ :seven: | [HBNB Project](https://github.com/vlldnt/holbertonschool-hbnb) _(part2: Business Layer & API)_  :white_check_mark:   |
 |  $${\color{red}Week}$$ :eight: | [HBNB Project](https://github.com/vlldnt/holbertonschool-hbnb) _(part3: Authentification & Database )_  | 
 |  | **SQL** 📊    |
-|  $${\color{ref}Week}$$ :eight: | [Introduction](https://github.com/vlldnt/holbertonschool-higher_level_programming/tree/main/SQL_introduction)  ✅ - [More Queries](https://github.com/vlldnt/holbertonschool-higher_level_programming/tree/main/SQL_more_queries)    | 
+|  $${\color{red}Week}$$ :eight: | [Introduction](https://github.com/vlldnt/holbertonschool-higher_level_programming/tree/main/SQL_introduction)  ✅ - [More Queries](https://github.com/vlldnt/holbertonschool-higher_level_programming/tree/main/SQL_more_queries)    | 
