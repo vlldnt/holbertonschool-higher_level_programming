@@ -8,5 +8,6 @@
 |  $${\color{orange}Week}$$ :five: | [Input - Output](https://github.com/vlldnt/holbertonschool-higher_level_programming/tree/main/python-input_output) :white_check_mark: -  [Serialization](https://github.com/vlldnt/holbertonschool-higher_level_programming/tree/main/python-serialization) :white_check_mark:   | 
 |  $${\color{orange}Week}$$ :six: | [RESTful API](https://github.com/vlldnt/holbertonschool-higher_level_programming/tree/main/restful-api) :white_check_mark:  - [HBNB Project](https://github.com/vlldnt/holbertonschool-hbnb)(part1)  | 
 |  $${\color{orange}Week}$$ :seven: | [HBNB Project](https://github.com/vlldnt/holbertonschool-hbnb)(part2) :white_check_mark:   |
-|  **Python** :snake:  and **SQL** 📊 |   |
+|  $${\color{orange}Week}$$ :eight: | [HBNB Project](https://github.com/vlldnt/holbertonschool-hbnb)(part3) :white_check_mark:   | 
+|  **SQL** 📊 |   |
 |  $${\color{orange}Week}$$ :eight: | SQL ([Introduction](https://github.com/vlldnt/holbertonschool-higher_level_programming/tree/main/SQL_introduction)  ✅ - [More queries](https://github.com/vlldnt/holbertonschool-higher_level_programming/tree/main/SQL_more_queries) )   | 
