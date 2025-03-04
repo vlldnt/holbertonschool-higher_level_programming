@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''IMport all states from hbtn_0d_usa'''
+'''Import all states from hbtn_0d_usa'''
 
 
 import MySQLdb
