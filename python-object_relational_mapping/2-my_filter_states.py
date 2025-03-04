@@ -16,8 +16,8 @@ if __name__ == '__main__':
         charset="utf8"
         )
     cur = db.cursor()
-    cur.execute(f"SELECT * FROM states WHERE name='{sys.argv[4]}' "
-                "ORDER BY id ASC")
+    cur.execute("SELECT * FROM states WHERE name='{}' "
+                "ORDER BY id ASC".format(sys.argv[4]))
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
