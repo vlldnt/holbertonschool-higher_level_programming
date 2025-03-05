@@ -11,7 +11,7 @@ Base = declarative_base()
 
 
 class State(Base):
-    '''Class State'''
+    '''Class'''
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, nullable=False,
                 autoincrement=True, unique=True)
