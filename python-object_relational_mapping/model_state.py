@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-''''''
+'''SQL Alchemy module used to create a State table in 6usa DB'''
+
 
 from sqlalchemy import Column, Integer, String, create_engine
 from sqlalchemy.ext.declarative import declarative_base
@@ -10,6 +11,7 @@ Base = declarative_base()
 
 
 class State(Base):
+    '''Class State'''
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, nullable=False,
                 autoincrement=True, unique=True)
