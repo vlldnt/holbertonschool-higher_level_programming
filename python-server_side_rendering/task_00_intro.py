@@ -3,21 +3,24 @@
 
 import os
 
+
 def generate_invitations(template, attendees):
-
+    '''Generate invitations'''
     if not isinstance(template, str):
-
-        raise TypeError('template must be a string')
+        raise TypeError('template must'
+                        f' be a string, got {type(template).__name__}')
     if not template:
         raise ValueError('Template is empty, no output files generated.')
-    
+
     if not isinstance(attendees, list) or \
-        not all(isinstance(dict_attendee, dict) 
+        not all(isinstance(dict_attendee, dict)
                 for dict_attendee in attendees):
-        raise TypeError('attendees must be a list and with only dictionaries')
+        raise TypeError('attendees must be a list'
+                        ' and with only dictionaries '
+                        f'got {type(attendees).__name__}')
     if not attendees:
-        raise ValueError('No data provided, no output files generated.')
-    
+        raise ValueError(f'No data provided, no output files generated')
+
     try:
         num = 1
         for attendee in attendees:
@@ -25,8 +28,9 @@ def generate_invitations(template, attendees):
             keys = ['name', 'event_title', 'event_location', 'event_date']
             for key in keys:
                 word = attendee.get(key, "N/A")
-                mail = mail.replace(f'{{{key}}}', 
-                                    word if word is not None else f"{key}: N/A")
+                mail = mail.replace(f'{{{key}}}',
+                                    word if word
+                                    is not None else f"{key}: N/A")
 
             if os.path.exists(f'output_{num}.txt'):
                 print(f'output_{num}.txt already exists, skipping writting')
