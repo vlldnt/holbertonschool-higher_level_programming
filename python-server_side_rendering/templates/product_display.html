@@ -21,9 +21,9 @@
         <tbody>
             {% for product in products %}
             <tr>    
-                <tr scope="row">{{ Product['name'] }}</tr>
-                <td>{{ Product['category'] }}</td>
-                <td>{{ Product['price'] }}</td>
+                <td>{{ product['name'] }}</td>
+                <td>{{ product['category'] }}</td>
+                <td>{{ product['price'] }}</td>
             </tr>
             {% endfor %}
         </tbody>
