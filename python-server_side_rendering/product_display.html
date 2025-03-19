@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Products Display</title>
+</head>
+<body>
+    {% include ('header.html') %}
+    <h1>Products Display</h1>
+    {% if error %}
+        <p>error: {{ error }}</p>
+    {% elif products %}
+    <table>
+        <caption>List of products</caption>
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Category</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>    
+                <tr scope="row">{{ Product['name'] }}</tr>
+                <td>{{ Product['category'] }}</td>
+                <td>{{ Product['price'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+        <p>No products found</p>
+    {% endif %}
+    {% include ('footer.html') %}
+</body>
+</html>
