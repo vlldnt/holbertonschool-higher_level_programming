@@ -7,19 +7,19 @@ import os
 def generate_invitations(template, attendees):
     '''Generate invitations'''
     if not isinstance(template, str):
-        raise TypeError('template must'
+        print('template must'
                         f' be a string, got {type(template).__name__}')
     if not template:
-        raise ValueError('Template is empty, no output files generated.')
+        print('Template is empty, no output files generated.')
 
     if not isinstance(attendees, list) or \
         not all(isinstance(dict_attendee, dict)
                 for dict_attendee in attendees):
-        raise TypeError('attendees must be a list'
+        print('attendees must be a list'
                         ' and with only dictionaries '
                         f'got {type(attendees).__name__}')
     if not attendees:
-        raise ValueError(f'No data provided, no output files generated')
+        print(f'No data provided, no output files generated.')
 
     try:
         num = 1
@@ -38,7 +38,5 @@ def generate_invitations(template, attendees):
             with open(f'output_{num}.txt', 'w') as file:
                 file.write(mail)
             num = num + 1
-    except TypeError as e:
-        return e
-    except ValueError as e:
-        return e
+    except Exception as e:
+        print(f'An error occured while writting: {e}')
